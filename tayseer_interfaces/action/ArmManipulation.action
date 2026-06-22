@@ -1,0 +1,15 @@
+# Goal
+string object_name
+float32[3] object_position   # From world model
+float32[3] orientation   # From world model
+
+string grasp_direction       # "Top" or "Front"
+bool pick
+---
+# Result
+bool success
+string message
+---
+# Feedback
+string stage  # "approaching", "grasping", "lifting"
+float32 progress
